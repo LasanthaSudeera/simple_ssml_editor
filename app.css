@@ -1,0 +1,308 @@
+/* CSS RESET */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{ margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent}body{ line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{ display:block}nav ul{ list-style:none}blockquote,q{ quotes:none}blockquote:before,blockquote:after,q:before,q:after{ content:''; content:none}a{ margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent}ins{ background-color:#ff9; color:#000; text-decoration:none}mark{ background-color:#ff9; color:#000; font-style:italic; font-weight:bold}del{ text-decoration:line-through}abbr[title],dfn[title]{ border-bottom:1px dotted; cursor:help}table{ border-collapse:collapse; border-spacing:0}hr{ display:block; height:1px; border:0;  border-top:1px solid #ccc; margin:1em 0; padding:0}input,select{ vertical-align: middle;}
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+body {
+    background-color: rgb(230, 230, 224);
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Helvetica Neue",Helvetica,Arial,Sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin:0 auto;
+}
+
+.spacing-default {
+    padding: 10px;
+}
+
+.spacing-lr {
+    padding: 0 10px;
+}
+
+.spacing-tb {
+    padding: 10px 0;
+}
+
+.fat {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color:#333
+}
+
+i {
+    font-style: normal;
+}
+
+a.underline {
+    border-bottom: 1px solid #333;
+}
+
+p {
+    margin: 5px 0 10px 0;
+    max-width: 600px;
+}
+
+.xxlarge {
+    font-size: 32px;
+    line-height: 30px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    font-family: roboto;
+}
+
+.xlarge {
+    font-size: 26px;
+    line-height: 24px;
+    font-weight: 100;
+    margin-bottom: 5px;
+    font-family: roboto;
+}
+
+.large {
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 100;
+    margin-bottom: 5px;
+    font-family: roboto;
+}
+
+.small {
+    font-size:12px;
+    line-height:16px;
+    font-weight: 100;
+}
+
+.align-right {
+    float: right;
+    vertical-align: baseline;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
+.screenreader {
+    position:absolute;
+    left:-999em
+}
+
+.mobile-text {
+    display: none;
+}
+
+.fat {
+    font-weight: bold;
+}
+
+abbr {
+    border-bottom: none;
+    font-style: normal;
+    border:none;
+}
+.start-page {
+    text-align: center;
+}
+
+.start-page p {
+   max-width:none;
+}
+
+.ok {
+    color: green;
+}
+
+.grey-text {
+    color:#999;
+}
+
+.edit {
+    color: darkred;
+}
+
+.down, .error-text {
+    color: red;
+}
+
+.extra-margin-l {
+    margin-left: 10px;
+}
+
+.extra-margin-top {
+    margin-top: 20px;
+}
+
+/* CUSTOM */
+.editor {
+    min-height:320px;
+    padding:20px;
+    background-color: #fff;
+    border:1px solid #ccc;
+    font-size:22px;
+    line-height:32px;
+    text-align: left;
+}
+
+.editor .emphasis {
+    font-weight:bold;
+}
+
+.editor .pitch-up {
+    letter-spacing: -1px;
+    border-bottom:1px dashed #ccc;
+}
+
+.editor .pitch-down {
+    letter-spacing: 5px;
+    border-bottom:1px dashed #ccc;
+}
+
+
+.editor .delay::before {
+    font-family: FontAwesome;
+     content: "\f00d";
+}
+
+.toolbar {
+    margin-bottom:10px;
+    text-align: left;
+}
+
+.output {
+    font-family: 'Courier New', Courier, monospace;
+    font-size:16px;
+    border:1px dashed #ccc;
+    padding:20px;
+}
+
+
+
+/* BUTTONS */
+.buttons {
+    outline: none;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    box-shadow: 1px 2px #ccc;
+}
+
+.buttons i {
+    margin-left: 6px;
+}
+
+.buttons i.left {
+    margin-left: 0;
+}
+
+.buttons.green {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.buttons.green:hover {
+    background-color: #449d44;
+    border-color: #398439;
+    box-shadow: none;
+}
+   
+.buttons.red {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.buttons.red:hover {
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+.buttons.lightblue {
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.buttons.lightblue:hover {
+    background-color: #31b0d5;
+    border-color: #269abc;
+    box-shadow: none;
+}
+
+.buttons.blue {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.buttons.blue:hover {
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+.buttons.orange {
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.buttons.orange:hover {
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+
+
+
+@media (min-width: 640px) {
+
+    .xxlarge {
+        font-size: 52px;
+        line-height: 42px;
+    }
+
+    .xlarge {
+        font-size: 32px;
+        line-height: 28px;
+    }
+
+    .mobile-text {
+        display: inline;
+    }
+
+    .spacing-default {
+        padding: 40px 20px;
+    }
+
+    .spacing-lr {
+        padding: 0 20px;
+    }
+
+    .spacing-tb {
+        padding: 40px 0;
+    }
+
+ }
